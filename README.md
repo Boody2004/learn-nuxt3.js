@@ -1,42 +1,19 @@
-# Nuxt 3 Minimal Starter
+# learn-nuxt3.js
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+<b>coded by [Abdelrahman Atef](https://linklaunchy.vercel.app/boody_04)</b>
 
-## Setup
+**HAVE FUN 👌**
 
-Make sure to install the dependencies:
+- **Nuxt3.js**
 
-```bash
-# yarn
-yarn install
+## Project setup
 
-# npm
+```
 npm install
-
-# pnpm
-pnpm install --shamefully-hoist
 ```
 
-## Development Server
+### Compiles and minifies for production
 
-Start the development server on http://localhost:3000
-
-```bash
+```
 npm run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
