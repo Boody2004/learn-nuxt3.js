@@ -1,8 +1,8 @@
 <template>
   <div>
-    <header class="shadow-sm bg-white">
+    <header class="shadow-sm bg-white py-3">
       <nav class="container mx-auto p-4 flex justify-between">
-        <NuxtLink to="/" class="font-bold">Nuxt</NuxtLink>
+        <NuxtLink to="/" class="font-bold text-xl">Nuxt</NuxtLink>
       </nav>
     </header>
 
