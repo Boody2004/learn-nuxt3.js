@@ -2,15 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-gray-50;
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: white;
+  border-radius: 25px;
+  cursor: pointer;
+}
+::-webkit-scrollbar-thumb {
+  background: #f56565;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f56565;
+  cursor: pointer;
 }
 
-@layer components {
-  .btn {
-    @apply bg-[#000957] text-white px-3 py-2 rounded-md text-white;
-  }
-  .card {
-    @apply p-3 rounded-md bg-white shadow-md h-full;
-  }
+body {
+  @apply bg-gray-100;
 }
