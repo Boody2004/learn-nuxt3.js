@@ -4,7 +4,11 @@
       <div class="container mx-auto p-4">
         <div class="dropdown relative">
           <button class="link flex">
-            <span class="px-2 rounded-full bg-red-500 text-white">1</span>
+            <span
+              class="py-[2px] px-1 rounded-full bg-red-500 text-xs text-white"
+            >
+              {{ count }}
+            </span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -48,8 +52,9 @@
 </template>
 
 <script setup>
-const url = "https://fakestoreapi.com/products?limit=18";
+const url = "https://fakestoreapi.com/products";
 const { data: products } = await useFetch(url);
+const count = url.length;
 </script>
 
 <style scoped>
