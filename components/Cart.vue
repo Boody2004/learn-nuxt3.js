@@ -1,8 +1,10 @@
 <template>
   <div class="dropdown relative">
-    <IconCart />
+    <IconCart @click="isOpen = !isOpen" />
+
     <div
-      class="dropdown-menu shadow-md absolute left-0 p-3 opacity-0 pointer-events-none bg-slate-400 rounded-md"
+      v-show="isOpen"
+      class="dropdown-menu shadow-md absolute left-0 p-3 bg-slate-400 rounded-md"
     >
       <div class="max-h-80 overflow-y-scroll">
         <div v-for="product in products">
@@ -22,19 +24,23 @@
 </template>
 
 <script setup>
-const url = "https://fakestoreapi.com/products";
-const { data: products } = await useFetch(url);
+const { data: products } = await useFetch("https://fakestoreapi.com/products");
+</script>
+
+<script>
+export default {
+  data() {
+    return {
+      isOpen: false,
+    };
+  },
+};
 </script>
 
 <style scoped>
 .dropdown-menu {
-  top: calc(100% + 0.25rem);
+  top: calc(100% + 0.7rem);
   transform: translateY(-10px);
   transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
-}
-.dropdown > .link:focus + .dropdown-menu {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
 }
 </style>
